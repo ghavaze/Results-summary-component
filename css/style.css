@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card {
+    display: flex;
+    width: 600px;
+    border-radius: 25px;
+  }
+  .result {
+    gap: 3rem;
+    width: 50%;
+    border-radius: 25px;
+  }
+  .summary {
+    width: 50%;
+  }
+}
+body {
+  min-height: 100vh;
+  background-color: hsl(221, 100%, 96%);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.result .result-heading {
+  font-size: 1.8rem;
+  color: hsl(241, 100%, 89%);
+}
+.result .result-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.result .result-circle p:first-child {
+  font-size: 4.6rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+.result .result-circle p:last-child {
+  font-size: 1.5rem;
+  color: hsl(241, 100%, 89%);
+}
+.result .result-subheading {
+  font-size: 2.4rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.result .result-text {
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+.summary .summary-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.summary .summary-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.summary .summary-boxes .summary-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+.summary .summary-boxes .summary-box .summary-box-result {
+  color: rgba(0, 0, 0, 0.3);
+}
+.summary .summary-boxes .summary-box .summary-box-result strong {
+  color: #000;
+}
+.summary .summary-boxes .summary-box .summary-box-nametag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.summary .summary-boxes .summary-box-reaction {
+  background-color: rgba(255, 87, 87, 0.05);
+  color: hsl(0, 100%, 67%);
+}
+.summary .summary-boxes .summary-box-memory {
+  background-color: rgba(255, 177, 31, 0.05);
+  color: hsl(39, 100%, 56%);
+}
+.summary .summary-boxes .summary-box-verbal {
+  background-color: rgba(0, 189, 145, 0.05);
+  color: hsl(166, 100%, 37%);
+}
+.summary .summary-boxes .summary-box-visual {
+  background-color: rgba(17, 36, 212, 0.05);
+  color: hsl(234, 85%, 45%);
+}
+.summary .btn {
+  padding: 1.4rem 4rem;
+  border: none;
+  border-radius: 50px;
+  background-color: hsl(224, 30%, 27%);
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
+}
+.summary .btn:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}/*# sourceMappingURL=style.css.map */

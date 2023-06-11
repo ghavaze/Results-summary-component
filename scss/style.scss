@@ -1,0 +1,156 @@
+@use './reset';
+@use './media-queries';
+@use './variables' as *;
+
+body {
+    min-height: 100vh;
+
+	background-color: $pale-blue;
+
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-size: 16px;
+}
+
+.card{
+	background-color: $white;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem 0;
+
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+
+	background: linear-gradient($light-slate-blue, $light-royal-blue);
+
+	.result-heading {
+		font-size: 1.8rem;
+		color: $light-lavender;
+	}
+
+	.result-circle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 135px;
+		height: 135px;
+
+		border-radius: 50%;
+
+		background: linear-gradient($violet-blue, $persian-blue);
+
+		p:first-child {
+			font-size: 4.6rem;
+			font-weight: 800;
+			color: $white;
+		}
+
+		p:last-child {
+			font-size: 1.5rem;
+			color: $light-lavender;
+		}
+	}
+
+	.result-subheading {
+		font-size: 2.4rem;
+		text-align: center;
+		color: $white;
+	}
+
+	.result-text {
+		padding: 1rem 3rem;
+
+		font-size: 1.7rem;
+		text-align: center;
+		color: $light-lavender;
+	}
+}
+
+.summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 3rem 2rem;
+
+	.summary-heading {
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+
+	.summary-boxes {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+
+		.summary-box {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1.4rem;
+
+			border-radius: 1rem;
+
+			font-weight: 700;
+
+			.summary-box-result {
+				color: rgba(0, 0, 0, 0.3);
+
+				strong {
+					color: #000;
+				}
+			}
+
+			.summary-box-nametag{
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
+		}
+
+		.summary-box-reaction {
+			background-color: rgba(255, 87, 87, 0.05);
+
+			color: $light-red;
+		}
+
+		.summary-box-memory {
+			background-color: rgba(255, 177, 31, 0.05);
+
+			color: $orangey-yellow;
+		}
+
+		.summary-box-verbal {
+			background-color: rgba(0, 189, 145, 0.05);
+
+			color: $green-teal;
+		}
+
+		.summary-box-visual {
+			background-color: rgba(17, 36, 212, 0.05);
+
+			color: $cobalt-blue;
+		}
+	}
+
+	.btn {
+		padding: 1.4rem 4rem;
+
+		border: none;
+		border-radius: 50px;
+
+		background-color: $dark-gray-blue;
+
+		font-size: 1.6rem;
+		color: $white;
+	}
+
+	.btn:hover {
+		background: linear-gradient($light-slate-blue, $light-royal-blue);
+	}
+}

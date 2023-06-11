@@ -1,0 +1,26 @@
+@media (min-width: 768px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .card{
+        display: flex;
+        width: 600px;
+
+        border-radius: 25px;
+    }
+
+    .result{
+        gap: 3rem;
+        width: 50%;
+
+        border-radius: 25px;
+    }
+
+    .summary{
+        width: 50%;
+    }
+}
